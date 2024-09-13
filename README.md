@@ -6,7 +6,7 @@ Generating high-quality and drug-like molecules from scratch within the expansiv
 
 - We propose a novel value-based reinforcement learning algorithm for *de novo* drug design to optimize the final generated molecule exclusively and consider multiple desired properties concurrently. Originating from the $A^*$ search, the path consistency condition, i.e., $f$ values on one optimal path should be identical, is utilized as the learning target to update the state evaluation function $f(s;\theta)$.
 
-- $DrugBA^*$ search, which is built upon the beam search algorithm, is proposed to generate a batch of molecules efficiently. This approach allows for the simultaneous production of a large number of molecules, facilitating the exploration of chemical space while maintaining the pursuit of optimality. At each step, the best partial solutions are determined based on the $f$ value, inspired by the $A^*$ search algorithm.
+-  $DrugBA^*$ search, which is built upon the beam search algorithm, is proposed to generate a batch of molecules efficiently. This approach allows for the simultaneous production of a large number of molecules, facilitating the exploration of chemical space while maintaining the pursuit of optimality. At each step, the best partial solutions are determined based on the $f$ value, inspired by the $A^*$ search algorithm.
 
 - The experimental results demonstrate the effectiveness of $DrugBA^*$ in both single property optimization and multi-objective optimization tasks. $DrugBA^*$ has exhibited significant improvements across all evaluation metrics compared to the state-of-the-art algorithm QADD. 
 
