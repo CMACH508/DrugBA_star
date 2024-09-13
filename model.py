@@ -330,7 +330,7 @@ if __name__ == "__main__":
     num_parallel = 8
     num_games = 125
     gpus = [0]
-    while player_base.epoch < 15:
+    while player_base.epoch < 100:
         jobs = [Process(target=collect_games, args=(gpus[0], num_games, player_base.epoch, i)) for i in range(num_parallel)]
         for job in jobs:
             job.start()
